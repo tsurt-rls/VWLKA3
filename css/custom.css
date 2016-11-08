@@ -1,0 +1,232 @@
+/** Allgemeine Einstellungen **/
+
+html {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#loadingImageContainer {
+    width: 25px;
+}
+
+.loadingImageContainerParent {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    background-color: white
+}
+
+.wrapper {
+    border-left: 1px dotted white;
+    border-right: 1px dotted white;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.loadingImageWrapper {
+    background-image: url("../imgs/loader.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    height: 70px;
+}
+
+/** Header CSS **/
+
+header, #module_datenbank, #alarmCenter, #view, #menu, footer {
+    margin: 10px auto;
+    max-width: 1000px;
+    height: 65px;
+    background-color: white;
+    padding: 5px;
+}
+
+#logo, #nav_sites, header nav {
+    float: left;
+    width: 30%;
+}
+
+header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    margin-top: 14px;
+    color: black;
+}
+
+header nav ul li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+
+header nav ul li a:active, header nav ul li a.active {
+    background-color: red;
+    color: white;
+}
+
+header nav ul li a:hover, #menu a:hover {
+    background-color: grey;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    display: block;
+    border-color: red;
+    border: 2px solid black;
+    min-width: 60px;
+    height: 35px;
+    margin: 0 1px 0 1px;
+    border-corner-shape: bevel;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 0px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul li a.klein, #nav_sites ul li a {
+    margin-top: 5px;
+    height: 30px;
+}
+
+#logo img {
+    width: 100%;
+    text-align: center;
+}
+
+#nav_sites {
+    display: none;
+}
+
+/** Menu CSS **/
+
+#menu {
+    height: 40px;
+}
+
+#menu a {
+    display: block;
+    border: 2px solid black;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#menu_left {
+    display: none;
+}
+
+#menu #menu_left, #menu_left a {
+    float: left;
+}
+
+#menu #menu_right, #menu_right a {
+    float: right;
+}
+
+/** Footer CSS **/
+footer {
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    color: white;
+    background-color: #004b84;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer a {
+    color: #ff991a;
+    font-weight: bold;
+}
+
+/** View CSS **/
+
+#view {
+    max-height: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+    text-align: center;
+}
+
+#view .viewTable {
+    table-layout: fixed;
+    width: 980px;
+    vertical-align: middle;
+}
+
+#view .viewTable .viewRow {
+    table-layout: fixed;
+    display: table-row;
+    max-width: 980x;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#view .viewTable .viewRow .blockLink {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+
+#view .viewTable .viewRow .blockLink a {
+    display: block;
+    width: 88px;
+    height: 88px;
+    border: 5px solid red;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20pt;
+    line-height: 38pt;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    z-index: 500;
+    line-height: 45px;
+}
+
+.imgFWLK {
+    width: 95%;
+}
+
+#dialog_fwlk ul {
+    font-weight: normal;
+}
+
+#view::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+#view::-webkit-scrollbar {
+    width: 15px;
+    background-color: #F5F5F5;
+}
+
+#view::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: red;
+}

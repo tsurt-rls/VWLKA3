@@ -1,0 +1,39 @@
+Version 1.0:
+-Erstellung einer Oberfläche zur Darstellung von Feuerwehrlaufkarten
+-Darstellung der PDF-Datein mit Hilfe von Adobe-Plugin im Browser
+
+Version 2.0:
+- Einbindung der Datenbankverbindung zu PC-TAB
+--Alarmton
+--Firebirddatenbank
+--Feuermeldung, usw wird angezeigt
+-IPAD-Unterstützung
+-Konfigurationsdati zur Einrichtung angelegt
+-Quellcodeüberarbeitung
+-ImageMagick und Ghostscript ersetz das PDF-Plugin
+--Darstellung duch konverierten Bilddatein
+--PDFs können runtergeladen werden
+
+Version 2.1:
+- Feuerwehrpläne können angezeigt werden.
+- Feuerwehrlaufkartenansicht mit BMZ und ohne BMZ
+
+Version 3.0:
+-Melde- und Systemhistorie von PCTAB integriert
+-Allegemine Quellcodeüberanpassungen
+
+Version 4.0:
+-Quellcode komplett neu strukturiert
+-An HTML5, CSS3 und PHP5 angepasst
+-Design überarbeitet
+-Feuerwehrpläne unterstützen nun zwei Ansichten
+--Darstellung mit Werken
+--Darstellung ohne Werke
+-Verwendung von Datatables zur Ansicht von Melde- und Systemhistory
+-Unterstützt alternative Melderbezeichnungen in der meldeHistory
+-Unterstützt nun Einsatzhinweise zu Feuerwehrlaufkarten
+
+Version 5.0:
+-Neuer Quellcode
+-Neues Design
+-Module
